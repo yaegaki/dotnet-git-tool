@@ -3,8 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <Description>Install .NET Core Tool from git repository.</Description>
-    <Version>0.0.1</Version>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Version>0.0.2</Version>
+    <TargetFrameworks>netcoreapp2.2;netcoreapp3.0</TargetFrameworks>
     <RootNamespace>DotNetGitTool</RootNamespace>
     <PackAsTool>True</PackAsTool>
     <Authors>yaegaki</Authors>

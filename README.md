@@ -5,6 +5,11 @@ Install .NET Core Tool from git repository
 
 * [.NET Core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
+or
+
+* [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+
+
 ## Install
 
 ```sh
