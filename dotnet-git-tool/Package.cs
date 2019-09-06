@@ -75,12 +75,12 @@ namespace DotnetGitTool
         }
 
         public string GetPackageGitRootDirectory()
-            => Path.Join(PathUtil.SrcRoot, Hosting, RepositoryRoot);
+            => Path.Combine(PathUtil.SrcRoot, Hosting, RepositoryRoot);
 
         public string GetPackageSrcDirectory()
-            => Path.Join(PathUtil.SrcRoot, Hosting, RepositoryRoot, ToolProjectDirectory);
+            => Path.Combine(PathUtil.SrcRoot, Hosting, RepositoryRoot, ToolProjectDirectory);
 
         public string GetPackageNupkgDirectory()
-            => Path.Join(PathUtil.NupkgRoot, Hosting, RepositoryRoot, ToolProjectDirectory);
+            => Path.Combine(PathUtil.NupkgRoot, Hosting, RepositoryRoot, ToolProjectDirectory);
     }
 }

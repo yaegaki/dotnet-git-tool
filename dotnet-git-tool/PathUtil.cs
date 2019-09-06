@@ -6,8 +6,8 @@ namespace DotnetGitTool
     public static class PathUtil
     {
         public static readonly string GitToolRoot = Path.Join(GetHomeDirectory(), ".dotnet-git-tool");
-        public static readonly string SrcRoot = Path.Join(GitToolRoot, "src");
-        public static readonly string NupkgRoot = Path.Join(GitToolRoot, "nupkg");
+        public static readonly string SrcRoot = Path.Combine(GitToolRoot, "src");
+        public static readonly string NupkgRoot = Path.Combine(GitToolRoot, "nupkg");
 
         private static string GetHomeDirectory()
         {
