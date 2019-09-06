@@ -60,6 +60,11 @@ namespace DotnetGitTool.Commands
             }
 
             var packageSrcDirectory = package.GetPackageSrcDirectory();
+            if (!Directory.Exists(packageSrcDirectory))
+            {
+                Console.Error.WriteLine($"not found '{packageSrcDirectory}'");
+                return ExitCode.InvalidArguments;
+            }
 
             var globalJSONPath = Path.Join(packageSrcDirectory, "global.json");
             byte[] globalJSONBackup = null;
